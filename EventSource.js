@@ -42,7 +42,7 @@ var EventSource = function(url, options) {
           xhr.setRequestHeader(key, eventsource.OPTIONS.headers[key]);
         });
       }
-      xhr.setRequestHeader('Accept', 'text/event-stream');
+      // xhr.setRequestHeader('Accept', 'text/event-stream');
       xhr.setRequestHeader('Cache-Control', 'no-cache');
       // we must make use of this on the server side if we're working with Android - because they don't trigger
       // readychange until the server connection is closed
